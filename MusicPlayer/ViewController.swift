@@ -169,6 +169,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         if sender.isSelected {
             self.player?.play()
+//            sender.imageView = UIImage.init(named: <#T##String#>)
         } else {
             self.player?.pause()
         }

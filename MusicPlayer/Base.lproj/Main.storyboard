@@ -21,6 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="button_play"/>
+                                <state key="selected" image="button_pause"/>
                                 <connections>
                                     <action selector="touchUpPlayPauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vup-jM-kK5"/>
                                 </connections>
@@ -56,6 +57,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button_pause" width="185" height="185"/>
         <image name="button_play" width="187" height="189"/>
     </resources>
 </document>
