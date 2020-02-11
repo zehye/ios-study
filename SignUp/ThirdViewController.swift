@@ -54,7 +54,16 @@ class ThirdViewController: UIViewController {
     
     @IBAction func touchUpSignupButton(_ sender: UIButton) {
         
-        self.dismiss(animated: true, completion: nil)
+        // phoneField, birthDisplay 모두 빈문자열 아니고, nil 도 아닐 때
+        guard let phoneInput = phoneField.text, !phoneInput.isEmpty else { return }
+        guard let birthSelected = birthDisplay.text, !birthSelected.isEmpty else { return }
+        
+        if birthDisplay.text != "MM-dd-yyyy" {
+            print("가입 완료")
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+//        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
